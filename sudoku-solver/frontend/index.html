@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku Solver</h1>
+
+    <!-- Grid size selection -->
+    <label for="grid-size">Choose grid size: </label>
+    <select id="grid-size" onchange="generateGrid()">
+      <option value="9">9x9 (Standard)</option>
+      <option value="4">4x4</option>
+      <option value="16">16x16</option>
+    </select>
+
+    <!-- Sudoku Grid -->
+    <div id="sudoku-grid"></div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+  <button onclick="solveSudoku()">Solve</button>
+  <button onclick="clearGrid()">Clear</button>
+  <button onclick="newPuzzle()">New Puzzle</button>
+  <button onclick="visualizeSolve()">Visualize Solve</button>
+</div>
+
+  </div>
+
+<div class="info-bar">
+  <div id="timer">00:00</div>
+  
+  <div class="slider-container">
+    <label for="speed">Visualization Speed:</label>
+    <input type="range" id="speed" min="1" max="4" value="2">
+  </div>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
