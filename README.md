@@ -5,11 +5,17 @@ Supports solving puzzles of various sizes (3×3, 4×4, 5×5, …), generating ne
 Features
 
 ✅ Solve Sudoku puzzles of variable sizes (3×3, 4×4, 5×5 …).
+
 ✅ Generate random Sudoku puzzles with adjustable clues.
+
 ✅ Stopwatch timer to track solving time.
+
 ✅ Visualization speed slider for solver animations.
+
 ✅ Stylish and responsive UI (centered grid, buttons, theme colors).
+
 ✅ Clear and reset functionality.
+
 ✅ Backend API built with Flask + Flask-CORS.
 
 Project Structure
